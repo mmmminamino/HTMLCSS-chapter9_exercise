@@ -20,9 +20,6 @@ main{
    position:relative;
    background-color:#eee;
 }
-.box:last-child{
-    margin-right:0;
-}
 .img1{
     height:150px;
     background-image:url(img/flow01.png);
@@ -50,10 +47,50 @@ main{
 .title{
     margin:15px 0 5px;
 }
-.footer{
+footer{
     height:50px;
     background-color:#aaa;
 }
-.social i{
+@media screen and (max-width:768px){
     
+    .flexbox{
+        display:block;
+    }
+    
+    header{
+        width:100%;
+        height:50px;
+        }
+    
+    main{
+        width:100%;
+        display:block;
+        }
+        
+        .box{
+            width:90%;
+            margin-top:20px;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        .img1{
+            width:100%;
+            height:150px;
+        }
+        .img2{
+            width:100%;
+            height:150px;
+        }
+        .img3{
+            width:100%;
+            height:150px;
+        }
+        .text{
+            width:100%;
+    }
+    footer{
+        width:100%;
+        height:50px;
+        
+    }
 }
